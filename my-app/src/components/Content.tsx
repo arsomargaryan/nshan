@@ -19,16 +19,17 @@ export default function Content() {
     checkScreenSize();
 
     window.addEventListener('resize', checkScreenSize);
-    setIsLoading(false)
+    setTimeout(() => setIsLoading(false), 1000);
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
   return(
-    <div >
+    <div className="flex justify-center items-center n">
       {isLoading ? (
         <Loading />
       ) : (
-        isMobile ? <MobileContent /> : <SizePC />
+        isMobile ? <MobileContent/> : <SizePC />
       )}
     </div>
-  );
+  )
+}
