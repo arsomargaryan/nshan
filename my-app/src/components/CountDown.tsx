@@ -27,34 +27,35 @@ const Countdown = () => {
 
     return (
         <div className=' flex flex-col justify-center items-center '>
-            <h1 className='text-2xl text-center'>Նշանադրության արարողությանը մնացել է </h1>
+            <div className='text-4xl'>25 ՀՈՒՆԻՍ 2025</div>
+
+            {/* <h1 className='text-2xl text-center'>Նշանադրության արարողությանը մնացել է </h1> */}
             <div className=' flex justify- items-center '>
                 <div className='flex flex-col justify-center items-center'>
-                    <div className='text-3xl'>{timeLeft.days} <span className='text-2xl m-2'>:</span></div>
-                    <div className='text-xs mr-7'>Օր</div>
+                    <div className='text-xl'>{timeLeft.days} <span className='text-lg m-1'>:</span></div>
+                    <div className='text-xs mr-5'>Օր</div>
                 </div>
 
 
                  <div className='flex flex-col justify-center items-center'>
-                    <div className='text-3xl'>{timeLeft.hours} <span className='text-2xl m-2'>:</span></div>
-                    <div className='text-xs mr-7'>Ժամ</div>
+                    <div className='text-xl'>{timeLeft.hours} <span className='text-lg m-1'>:</span></div>
+                    <div className='text-xs mr-5'>Ժամ</div>
                 </div>
 
                 
 
                  <div className='flex flex-col justify-center items-center'>
-                    <div className='text-3xl'>{timeLeft.minutes} <span className='text-2xl ml-2'>:</span></div>
-                    <div className='text-xs mr-5'>Րոպե</div>
+                    <div className='text-xl'>{timeLeft.minutes} <span className='text-lg ml-1'>:</span></div>
+                    <div className='text-xs mr-3'>Րոպե</div>
                 </div>
                 
                 
 
                  <div className='flex flex-col justify-center items-center'>
-                    <div className='text-3xl'>{timeLeft.seconds} </div>
+                    <div className='text-xl'>{timeLeft.seconds} </div>
                     <div className='text-xs'>Վարյկյան</div>
                 </div>
             </div>
-             <h1>29/06/2025</h1>
 
         </div>
     );
