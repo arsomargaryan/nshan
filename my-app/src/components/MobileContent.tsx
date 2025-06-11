@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import Image from "next/image";
 import Countdown from './CountDown';
 import ArmenianCalendar from './ArmenianCalendar';
