@@ -7,7 +7,7 @@ import Loading from './Loading';
 
 export default function MobileContent() {
         const [isLoading, setIsLoading] = useState<boolean>(true);
-        const [isPlaying, setIsPlaying] = useState(true);
+        const [isPlaying, setIsPlaying] = useState(false);
         const audioRef = useRef<HTMLAudioElement | null>(null);
 
         setTimeout(() => setIsLoading(false), 2000);
