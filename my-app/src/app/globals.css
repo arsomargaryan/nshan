@@ -70,3 +70,46 @@ body {
   color: #000;
   border: 2px solid #fbbf24;
 }
+
+.photoRight{
+    transform: translateX(0);
+    opacity: 0;
+    animation: rightAnimation 1.5s ease-in-out forwards;
+
+
+}
+.photoLeft{
+    transform: translateX(0);
+    opacity: 0;
+    animation: leftAnimation 1.5s ease-in-out 0.5s forwards;
+
+
+}
+
+@keyframes rightAnimation {
+    0%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+
+     100%{
+        transform: translateX(42px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes leftAnimation {
+    0%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+
+     100%{
+        transform: translateX(-35px);
+        opacity: 1;
+    }
+
+}

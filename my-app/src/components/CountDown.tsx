@@ -29,31 +29,30 @@ const Countdown = () => {
         <div className=' flex flex-col justify-center items-center '>
             <div className='text-4xl'>25 ՀՈՒՆԻՍ 2025</div>
 
-            {/* <h1 className='text-2xl text-center'>Նշանադրության արարողությանը մնացել է </h1> */}
             <div className=' flex justify- items-center '>
                 <div className='flex flex-col justify-center items-center'>
-                    <div className='text-xl'>{timeLeft.days} <span className='text-lg m-1'>:</span></div>
+                    <div className='text-xl'>{timeLeft.days} <span className='text-lg m-1 '>:</span></div>
                     <div className='text-xs mr-5'>Օր</div>
                 </div>
 
 
                  <div className='flex flex-col justify-center items-center'>
-                    <div className='text-xl'>{timeLeft.hours} <span className='text-lg m-1'>:</span></div>
-                    <div className='text-xs mr-5'>Ժամ</div>
+                    <div className='text-xl'>{timeLeft.hours} <span className='text-lg m-1  '>:</span></div>
+                    <div className='text-xs mr-4'>Ժամ</div>
                 </div>
 
                 
 
                  <div className='flex flex-col justify-center items-center'>
                     <div className='text-xl'>{timeLeft.minutes} <span className='text-lg ml-1'>:</span></div>
-                    <div className='text-xs mr-3'>Րոպե</div>
+                    <div className='text-xs mr-5'>Րոպե</div>
                 </div>
                 
                 
 
                  <div className='flex flex-col justify-center items-center'>
                     <div className='text-xl'>{timeLeft.seconds} </div>
-                    <div className='text-xs'>Վարյկյան</div>
+                    <div className='text-xs'>Վրկ․</div>
                 </div>
             </div>
 
