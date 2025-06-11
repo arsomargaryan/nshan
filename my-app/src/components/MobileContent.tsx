@@ -13,23 +13,10 @@ export default function MobileContent() {
   return (
     <div>
         {isLoading?<Loading />:null}
-        <div className='relative rounded-b-2xl '>
-            <Image src="/Aram.jpg" alt="Nshan" width={390} height={844}  className=' rounded-b-2xl w-full"
-' />
-<div
-  className="absolute inset-x-0 bottom-0 h-32 pointer-events-none"
-  style={{
-    background: `linear-gradient(to top, 
-      rgba(255, 192, 203, 0.6) 0%, 
-      rgba(255, 255, 255, 0.6) 50%, 
-      rgba(255, 255, 255, 0) 100%)`,
-    backgroundImage: `linear-gradient(to right, 
-      rgba(255, 192, 203, 0.6), 
-      rgba(255, 255, 255, 1))`,
-    maskImage: `linear-gradient(to top, black 60%, transparent)`,
-    WebkitMaskImage: `linear-gradient(to top, black 60%, transparent)`,
-  }}
-/>
+        <div className='relative rounded-b-2xl w-full h-[590px] '>
+            <Image src="/Aram.jpg" alt="Nshan" fill className=' rounded-b-2xl'/>
+  <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-white via-transparent to-transparent" />
+
 
             <div className=' absolute text-white text-3xl top-3 w-full flex justify-center items-center '>
                 Արամ և Արմինե
