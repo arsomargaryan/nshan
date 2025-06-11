@@ -14,7 +14,7 @@ export default function MobileContent() {
     <div>
         {isLoading?<Loading />:null}
         <div className='relative rounded-b-2xl '>
-            <Image src="/Aram.jpg" alt="Nshan" width={390} height={844}  className=' rounded-b-2xl className="object-cover [mask-image:linear-gradient(to_top,black_80%,transparent_100%)]"
+            <Image src="/Aram.jpg" alt="Nshan" width={390} height={844}  className=' rounded-b-2xl w-full"
 ' />
 <div
   className="absolute inset-x-0 bottom-0 h-32 pointer-events-none"
