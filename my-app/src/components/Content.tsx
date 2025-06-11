@@ -19,7 +19,7 @@ export default function Content() {
     checkScreenSize();
 
     window.addEventListener('resize', checkScreenSize);
-    setTimeout(() => setIsLoading(false), 2300);
+    setTimeout(() => setIsLoading(false), 500);
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
