@@ -6,12 +6,18 @@ import Loading from './Loading';
 import { useInView } from 'react-intersection-observer';
 import Locations from './Locations';
 import FormInvitetion from './FormInvitetion';
-import { Sevillana } from 'next/font/google';
+import { Ballet, Lavishly_Yours } from 'next/font/google';
 
-export const sevillana = Sevillana({
-  weight: '400', // У шрифта только один вес
+const ballet = Ballet({
+  weight: '400', // Ballet imeet tol'ko odin variant
   subsets: ['latin'],
-  variable: '--font-sevillana',
+  display: 'swap',
+});
+
+export const lavishlyYours = Lavishly_Yours({
+  weight: '400', // Etot font imeet tol'ko odin ves
+  subsets: ['latin'],
+  display: 'swap',
 });
 
 export default function MobileContent() {
@@ -60,10 +66,10 @@ export default function MobileContent() {
             <Image src="/Aram.jpg" alt="Nshan" fill className='rounded-b-2xl ' onLoadingComplete={handleImageLoad}
           priority/>
             <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-white via-transparent to-transparent" />
-            <div className={`absolute text-black text-3xl bottom-25 gap-1 w-full flex flex-col justify-center items-center ${sevillana.className}`}>
-                <div>Արամ</div>
+            <div className={`absolute text-black text-4xl bottom-25 gap-1 w-full flex flex-col justify-center items-center ${ballet.className}`}>
+                <div className='mr-10'>Aram</div>
                 <div>&</div>
-                <div>Արմինե</div>
+                <div className='ml-10 mt-3'>Armine</div>
             </div>
             <div className=' absolute w-full bottom-0 text-white font-bold'></div>
         </div>
@@ -81,7 +87,7 @@ export default function MobileContent() {
 
         <div className='felx justify-center items-center mt-10 mx-8'>
                 <div className='h-0.5 w-25 bg-black'></div>
-                <div className='text-center text-5xl'>Սիրելի հյուրեր</div>
+                <div className={`text-center text-5xl ${lavishlyYours.className}`}>Dear Guests</div>
                 <div className='h-0.5 w-25 bg-black float-end mt-1.5'></div>
                 <div className='text-center mt-7 mx-5 text-lg'>
                     Մեր կյանքում գեղեցիկ իրադարձություն է սպասվում։
