@@ -5,6 +5,7 @@ import ArmenianCalendar from './ArmenianCalendar';
 import Loading from './Loading';
 import { useInView } from 'react-intersection-observer';
 import Locations from './Locations';
+import FormInvitetion from './FormInvitetion';
 
 
 export default function MobileContent() {
@@ -12,6 +13,8 @@ export default function MobileContent() {
         const [isPlaying, setIsPlaying] = useState(false);
         const audioRef = useRef<HTMLAudioElement | null>(null);
         const { ref: firstRef, inView: firstInView } = useInView();
+        const { ref: scaleRef, inView: secondInView } = useInView();
+
 
 
 
@@ -93,10 +96,14 @@ export default function MobileContent() {
         <div className='flex justify-center items-center mt-15'>
             <ArmenianCalendar />  
         </div>
-        <div>
-            
-        </div>
+
         <Locations />
+        
+        <div className='flex justify-center items-center' ref={scaleRef}>
+            <Image src="/Aram.jpg" alt="Nshan" width={300} height={315} 
+                className={` rounded-2xl ${secondInView?"photoScale":''}`}/>
+        </div>
+        <FormInvitetion />
     </div>
     
   )

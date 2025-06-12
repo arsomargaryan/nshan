@@ -86,6 +86,26 @@ body {
 
 }
 
+.photoScale{
+  opacity: 0;
+  animation: scaleAnimation 1.5s ease-in-out forwards;
+
+}
+
+@keyframes scaleAnimation {
+   0%{
+        transform:scale(0.2);
+        opacity: 0;
+    }
+
+
+     100%{
+        transform:scale(1);
+        opacity: 1;
+    }
+}
+
+
 @keyframes rightAnimation {
     0%{
         transform: translateX(0);
@@ -113,3 +133,72 @@ body {
     }
 
 }
+
+
+.radiobox-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 66px; /* 200 / 3 */
+  flex-direction: column;
+}
+
+.radiobox-body > div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  width: 100%;
+}
+
+#label, #label1, #label3, #label5 {
+  position: absolute;
+  top: 8px; /* 25 / 3 */
+  left: 33px; /* 100 / 3 */
+  height: 13px; /* 40 / 3 */
+  width: 13px; /* 40 / 3 */
+  cursor: pointer;
+  border: 2.66px solid #434343; /* 8 / 3 */
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#label2, #label4 {
+  display: flex;
+  width: 6.66px; /* 20 / 3 */
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.45s;
+  width: 200px;
+}
+
+#radiobox, #radiobox1,  #radiobox2, #radiobox3 {
+  visibility: hidden;
+}
+
+#radiobox:checked ~ #label,
+#radiobox1:checked ~ #label1,
+#radiobox2:checked ~ #label3,
+#radiobox3:checked ~ #label5
+ {
+  transform: rotate(45deg);
+  top: 5px; /* 15 / 3 */
+  left: 40px; /* 120 / 3 */
+  width: 3.33px; /* 10 / 3 */
+  border-color: #24c78e;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-radius: 0;
+}
+
+#radiobox:checked ~ #label2,
+#radiobox1:checked ~ #label2,
+#radiobox2:checked ~ #label4,
+#radiobox3:checked ~ #label4 {
+  color: #24c78e;
+}
+
+
+
