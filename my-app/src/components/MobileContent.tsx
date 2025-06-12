@@ -86,8 +86,8 @@ export default function MobileContent() {
 
 
         <div className='felx justify-center items-center mt-10 mx-8'>
-                <div className='h-0.5 w-25 bg-black'></div>
-                <div className={`text-center text-5xl ${lavishlyYours.className}`}>Dear Guests</div>
+                <div className='h-0.5 w-25 mb-2 bg-black'></div>
+                <div className={`text-center text-6xl ${lavishlyYours.className}`}>Dear Guests</div>
                 <div className='h-0.5 w-25 bg-black float-end mt-1.5'></div>
                 <div className='text-center mt-7 mx-5 text-lg'>
                     Մեր կյանքում գեղեցիկ իրադարձություն է սպասվում։
