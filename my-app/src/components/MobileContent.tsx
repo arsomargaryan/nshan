@@ -67,7 +67,7 @@ export default function MobileContent() {
     <div>
         {isLoading?<Loading />:null}
         
-        <div className='relative rounded-b-2xl w-full h-[650px] mb-7'>
+        <div className='relative rounded-b-2xl w-full h-[660px] mb-7'>
             <Image src="/aram1.jpg" alt="Nshan" fill className='rounded-b-2xl object-cover' onLoad={handleImageLoad}
           priority/>
             <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-white via-transparent to-transparent" />
@@ -118,7 +118,7 @@ export default function MobileContent() {
 
         <FormInvitetion />
              <div className='flex justify-center items-center' ref={scaleRef}>
-            <Image src="/aram.jpg" alt="Nshan" width={300} height={315} 
+            <Image src="/aram.JPG" alt="Nshan" width={300} height={315} 
                 className={` rounded-2xl ${secondInView?"photoScale":''}`}/>
         </div>
         <div className={`text-4xl text-center my-20 ${damion.className}`}>See   You   Soon ...</div>
