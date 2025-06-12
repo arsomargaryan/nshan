@@ -67,7 +67,7 @@ export default function MobileContent() {
     <div>
         {isLoading?<Loading />:null}
         
-        <div className='relative rounded-b-2xl w-full h-[630px] mb-7'>
+        <div className='relative rounded-b-2xl w-full h-[650px] mb-7'>
             <Image src="/aram1.jpg" alt="Nshan" fill className='rounded-b-2xl object-cover' onLoad={handleImageLoad}
           priority/>
             <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-white via-transparent to-transparent" />
