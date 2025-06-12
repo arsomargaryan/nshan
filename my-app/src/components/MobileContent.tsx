@@ -6,14 +6,19 @@ import Loading from './Loading';
 import { useInView } from 'react-intersection-observer';
 import Locations from './Locations';
 import FormInvitetion from './FormInvitetion';
-import { Ballet, Lavishly_Yours } from 'next/font/google';
+import {Damion, Lavishly_Yours, Miss_Fajardose } from 'next/font/google';
 
-const ballet = Ballet({
-  weight: '400', // Ballet imeet tol'ko odin variant
+export const damion = Damion({
   subsets: ['latin'],
+  weight: '400', // dostupen tol'ko 400
   display: 'swap',
 });
 
+export const missFajardose = Miss_Fajardose({
+  subsets: ['latin'],
+  weight: '400', // dostupen tol'ko 400
+  display: 'swap',
+});
 export const lavishlyYours = Lavishly_Yours({
   weight: '400', // Etot font imeet tol'ko odin ves
   subsets: ['latin'],
@@ -62,12 +67,12 @@ export default function MobileContent() {
     <div>
         {isLoading?<Loading />:null}
         
-        <div className='relative rounded-b-2xl w-full h-[590px] mb-7'>
-            <Image src="/Aram.jpg" alt="Nshan" fill className='rounded-b-2xl ' onLoad={handleImageLoad}
+        <div className='relative rounded-b-2xl w-full h-[630px] mb-7'>
+            <Image src="/aram1.jpg" alt="Nshan" fill className='rounded-b-2xl object-cover' onLoad={handleImageLoad}
           priority/>
             <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-white via-transparent to-transparent" />
-            <div className={`absolute text-black text-5xl bottom-20 gap-1 w-full flex flex-col justify-center items-center ${ballet.className}`}>
-                <div className='mr-10'>Aram</div>
+            <div className={`absolute text-white text-7xl bottom-10 gap-1 w-full flex flex-col justify-center items-center ${missFajardose.className}`}>
+                <div className='mr-10 '>Aram</div>
                 <div>&</div>
                 <div className='ml-10 mt-3'>Armine</div>
             </div>
@@ -96,10 +101,10 @@ export default function MobileContent() {
         </div>
 
         <div className='relative mt-5 h-90 overflow-hidden' ref={firstRef}>
-            <Image src="/Aram.jpg" alt="Nshan" width={200} height={215} 
+            <Image src="/aram2.jpg" alt="Nshan" width={200} height={215} 
                 className={` rounded-2xl absolute -left-10 top-10  -rotate-8 z-10 ${firstInView?"photoRight":''}`}/>
         
-            <Image src="/Aram.jpg" alt="Nshan" width={200} height={215} 
+            <Image src="/aram3.jpg" alt="Nshan" width={200} height={215} 
             className={` absolute -right-10 bottom-0 rounded-2xl rotate-8  ${firstInView?" photoLeft":''}`}/>
         </div>
          
@@ -113,10 +118,10 @@ export default function MobileContent() {
 
         <FormInvitetion />
              <div className='flex justify-center items-center' ref={scaleRef}>
-            <Image src="/Aram.jpg" alt="Nshan" width={300} height={315} 
+            <Image src="/aram.jpg" alt="Nshan" width={300} height={315} 
                 className={` rounded-2xl ${secondInView?"photoScale":''}`}/>
         </div>
-        <div className='text-4xl text-center my-20'>Անհանբեր կսպասենք մեր հանդիպմանը</div>
+        <div className={`text-4xl text-center my-20 ${damion.className}`}>See   You   Soon ...</div>
     </div>
     
   )

@@ -30,7 +30,9 @@
         <div className='flex flex-col  justify-center  items-center m-7 gap-3 mt-15'>
             <div className='text-4xl'>ՀԱՐՑԱԹԵՐԻԿ</div>
             <div className='text-center'>Խնդրում ենք հաստատել Ձեր ներկայությունը։ Կսպասենք Ձեր պատասխանին մինչև <b>հունիսի 25-ը</b></div>
-            <form  onSubmit={sendData} ref={formRef}  className='flex flex-col justify-center items-center text-center mt-3'>
+            <form action="https://api.web3forms.com/submit" method="POST" onSubmit={sendData} ref={formRef}  className='flex flex-col justify-center items-center text-center mt-3'>
+                <input type="hidden" name="access_key" value="21e88e1c-1516-41fc-af9d-b52ef45c3466" />
+
                 <div className='text-xl'>Խմդրում ենք գրեք Ձեր անունը և ազգանունը</div>
                 <input type='text' name='name' value={name} required autoComplete='off' 
                     className={`border-b border-b-gray-400 w-full mb-5 text-center`} onChange={(e)=>setName(e.target.value)}/>

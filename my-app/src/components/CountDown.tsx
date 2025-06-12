@@ -27,7 +27,7 @@ const Countdown = () => {
 
     return (
         <div className=' flex flex-col justify-center items-center '>
-            <div className='text-4xl'>25 ՀՈՒՆԻՍ 2025</div>
+            <div className='text-4xl'>29 ՀՈՒՆԻՍ 2025</div>
 
             <div className=' flex justify- items-center '>
                 <div className='flex flex-col justify-center items-center'>
