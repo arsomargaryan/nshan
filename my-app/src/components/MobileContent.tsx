@@ -118,7 +118,7 @@ export default function MobileContent() {
 
         <FormInvitetion />
              <div className='flex justify-center items-center' ref={scaleRef}>
-            <Image src="/aramm.JPG" alt="Nshan" width={300} height={315} 
+            <Image src="/aramm.jpg" alt="Nshan" width={300} height={315} 
                 className={` rounded-2xl ${secondInView?"photoScale":''}`}/>
         </div>
         <div className={`text-4xl text-center my-20 ${damion.className}`}>See   You   Soon ...</div>
