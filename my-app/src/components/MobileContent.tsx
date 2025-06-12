@@ -6,7 +6,13 @@ import Loading from './Loading';
 import { useInView } from 'react-intersection-observer';
 import Locations from './Locations';
 import FormInvitetion from './FormInvitetion';
+import { Sevillana } from 'next/font/google';
 
+export const sevillana = Sevillana({
+  weight: '400', // У шрифта только один вес
+  subsets: ['latin'],
+  variable: '--font-sevillana',
+});
 
 export default function MobileContent() {
         const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -54,7 +60,7 @@ export default function MobileContent() {
             <Image src="/Aram.jpg" alt="Nshan" fill className='rounded-b-2xl ' onLoadingComplete={handleImageLoad}
           priority/>
             <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-white via-transparent to-transparent" />
-            <div className=' absolute text-black text-3xl bottom-25 gap-1 w-full flex flex-col justify-center items-center '>
+            <div className={`absolute text-black text-3xl bottom-25 gap-1 w-full flex flex-col justify-center items-center ${sevillana.className}`}>
                 <div>Արամ</div>
                 <div>&</div>
                 <div>Արմինե</div>
@@ -98,12 +104,13 @@ export default function MobileContent() {
         </div>
 
         <Locations />
-        
-        <div className='flex justify-center items-center' ref={scaleRef}>
+
+        <FormInvitetion />
+             <div className='flex justify-center items-center' ref={scaleRef}>
             <Image src="/Aram.jpg" alt="Nshan" width={300} height={315} 
                 className={` rounded-2xl ${secondInView?"photoScale":''}`}/>
         </div>
-        <FormInvitetion />
+        <div className='text-4xl text-center my-20'>Անհանբեր կսպասենք մեր հանդիպմանը</div>
     </div>
     
   )

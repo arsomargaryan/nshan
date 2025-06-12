@@ -27,7 +27,7 @@
         }
 
     return (
-        <div className='flex flex-col justify-center items-center m-7 gap-3'>
+        <div className='flex flex-col  justify-center  items-center m-7 gap-3 mt-15'>
             <div className='text-4xl'>ՀԱՐՑԱԹԵՐԻԿ</div>
             <div className='text-center'>Խնդրում ենք հաստատել Ձեր ներկայությունը։ Կսպասենք Ձեր պատասխանին մինչև <b>հունիսի 25-ը</b></div>
             <form  onSubmit={sendData} ref={formRef}  className='flex flex-col justify-center items-center text-center mt-3'>
