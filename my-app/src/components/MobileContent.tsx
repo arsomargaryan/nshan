@@ -66,7 +66,7 @@ export default function MobileContent() {
             <Image src="/Aram.jpg" alt="Nshan" fill className='rounded-b-2xl ' onLoadingComplete={handleImageLoad}
           priority/>
             <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-white via-transparent to-transparent" />
-            <div className={`absolute text-black text-4xl bottom-25 gap-1 w-full flex flex-col justify-center items-center ${ballet.className}`}>
+            <div className={`absolute text-black text-5xl bottom-20 gap-1 w-full flex flex-col justify-center items-center ${ballet.className}`}>
                 <div className='mr-10'>Aram</div>
                 <div>&</div>
                 <div className='ml-10 mt-3'>Armine</div>
