@@ -63,7 +63,7 @@ export default function MobileContent() {
         {isLoading?<Loading />:null}
         
         <div className='relative rounded-b-2xl w-full h-[590px] mb-7'>
-            <Image src="/Aram.jpg" alt="Nshan" fill className='rounded-b-2xl ' onLoadingComplete={handleImageLoad}
+            <Image src="/Aram.jpg" alt="Nshan" fill className='rounded-b-2xl ' onLoad={handleImageLoad}
           priority/>
             <div className="absolute inset-x-0 bottom-0 h-80 bg-gradient-to-t from-white via-transparent to-transparent" />
             <div className={`absolute text-black text-5xl bottom-20 gap-1 w-full flex flex-col justify-center items-center ${ballet.className}`}>

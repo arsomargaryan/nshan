@@ -20,7 +20,7 @@ const ArmenianCalendar = () => {
             key={i}
             className={`calendar-day  ${day === 29 ? ' relative' : ''}`}
           >
-            {day === 29 ? <i class="fa-regular fa-heart text-red-500 absolute text-5xl -top-0.5 -left-[5.5px]"></i>: ''}
+            {day === 29 ? <i className="fa-regular fa-heart text-red-500 absolute text-5xl -top-0.5 -left-[5.5px]"></i>: ''}
             {day || ''}
           </div>
         ))}
